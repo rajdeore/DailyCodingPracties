@@ -20,9 +20,4 @@ public class FindDuplicate {
         System.out.println(occurrenceRecord);
     }
 
-    public static void main(String[] args) {
-        String inputSting = "Raarrrj";
-        findDuplicate(inputSting);
-
-    }
 }
