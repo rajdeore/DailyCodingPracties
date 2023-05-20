@@ -8,4 +8,12 @@
 *.ctxt
 
 #out forlder
-out
+out/
+.idea/
+
+#.idea/misc.xml
+#.idea/modules.xml
+#.idea/uiDesigner.xml
+#.idea/vcs.xml
+
+DailyOneCode.iml
