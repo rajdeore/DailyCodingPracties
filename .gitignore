@@ -7,13 +7,9 @@
 # BlueJ files
 *.ctxt
 
-#out forlder
-out/
-.idea/
-
-#.idea/misc.xml
-#.idea/modules.xml
-#.idea/uiDesigner.xml
-#.idea/vcs.xml
 
 DailyOneCode.iml
+/gitignore2/
+/out/
+/gitignore/
+/.idea/
