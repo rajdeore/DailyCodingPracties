@@ -8,7 +8,7 @@
 *.ctxt
 
 #out forlder
-out/
+/out/
 .idea/
 
 #.idea/misc.xml
