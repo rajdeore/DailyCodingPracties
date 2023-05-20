@@ -17,4 +17,21 @@ public class IsPalindrom {
         return 1;
         //    }
     }
+
+    //using while loop
+    public int isPalindromeUsingWhile(String S) {
+        //right--------left
+        int right=0,left=S.length()-1;
+        int isPalindromeResult = 1;
+
+        while(right<left){
+            if(S.charAt(right) != S.charAt(left)){
+                isPalindromeResult = 0;
+                break;
+            }
+            right++;
+            left--;
+        }
+        return(isPalindromeResult);
+    }
 }
