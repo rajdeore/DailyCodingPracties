@@ -38,6 +38,23 @@ public class StringMain {
         //____________________________END OF IsPalindron____________________________________//
 
 
+        //___________________________Start of IsStringShuffleOfTwoString.IsStringShuffleOfTwoStringUsingLL___//
+
+/*
+        String s1 = "Test";
+        String s2 = "Test";
+        String s3 = "Guset";
+        String s4 = "TestTest";
+        String s5 = "TestTet";
+        String s6 = "TestGuest";
+        IsStringShuffleOfTwoString isStringShuffleOfTwoString = new IsStringShuffleOfTwoString();
+
+        System.out.println("case 1 = " + isStringShuffleOfTwoString.IsStringShuffleOfTwoStringUsingLL(s1, s2, s4));
+        System.out.println("case 1 = " + isStringShuffleOfTwoString.IsStringShuffleOfTwoStringUsingLL(s1, s2, s5));
+*/
+        //___________________________Start of IsStringShuffleOfTwoString.IsStringShuffleOfTwoStringUsingLL___//
+
+
 
         //______________________________START OF IsUniqe_________________________________//
 /*
@@ -61,17 +78,9 @@ public class StringMain {
         //_________________________________END OF IsUniqe_________________________________//
 
 
-        //______________________START OF StringReverseUsingPinter______________________//
+        //______________________________Start of RotationsOfEachOther___________________//
+
 /*
-        // String reverse using str --> charArray --> str
-        StringReverseUsingPointer stringreverseusingpointer = new StringReverseUsingPointer();
-        str = stringreverseusingpointer.stringReverseUsingPointer(str);
-        System.out.println("Revers string = " + str);
-*/
-        //______________________END OF StringReverseUsingPinter______________________//
-
-        //______________________________
-
 
         String str1 = "AAAZA";
         String str2 = "ABCDE";
@@ -81,6 +90,21 @@ public class StringMain {
 
         System.out.println("result = " + result);
         System.out.println("result = " + result1);
+*/
+
+        //______________________________END of RotationsOfEachOther___________________//
+
+
+
+        //______________________START OF StringReverseUsingPinter______________________//
+/*
+        // String reverse using str --> charArray --> str
+        StringReverseUsingPointer stringreverseusingpointer = new StringReverseUsingPointer();
+        str = stringreverseusingpointer.stringReverseUsingPointer(str);
+        System.out.println("Revers string = " + str);
+*/
+        //______________________END OF StringReverseUsingPinter______________________//
+
 
 
     }
