@@ -25,7 +25,8 @@ public class SelectioSort {
     void printArray(int arr[])
     {
         int n = arr.length;
-        for (int j : arr) System.out.print(j + " ");
+        for (int j : arr)
+            System.out.print(j + " ");
         System.out.println();
     }
 
