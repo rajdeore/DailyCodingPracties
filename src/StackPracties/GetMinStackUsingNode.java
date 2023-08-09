@@ -1,6 +1,5 @@
-package Algo.StackDS;
+package StackPracties;
 
-import javax.xml.soap.Node;
 import java.util.Stack;
 
 public class GetMinStackUsingNode {
