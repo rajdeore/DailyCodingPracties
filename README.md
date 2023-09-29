@@ -15,3 +15,12 @@
         * Solved by two way
             1. word by word comparision.
             2. char by char comparision.
+
+
+**#Bit Practices**
+    *question ToDo
+        1. Bit Masking
+        2. Find i^th bit
+        3. set i^th bit
+        4. clear i^th bit
+        5. find number of bit changes to convert a to b.
