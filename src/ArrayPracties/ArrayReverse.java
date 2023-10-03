@@ -1,7 +1,7 @@
 package ArrayPracties;
 
 public class ArrayReverse {
-    public int[] arrayReverse(int[] arr){
+    public int[] arrayReverseUsingBigO_N(int[] arr){
         int arrLength = arr.length;
 
         // left--->midle--->right
@@ -12,5 +12,20 @@ public class ArrayReverse {
             arr[left] = temp;
         }
         return arr;
+    }
+
+
+    public static void printArray(int arr[]){
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("arr[" + i + "] = " + arr[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        int tempArr[] = {1, 8, 2, 3, 7, 4, 5};
+
+        ArrayReverse obj = new ArrayReverse();
+        tempArr = obj.arrayReverseUsingBigO_N(tempArr);
+        printArray(tempArr);
     }
 }
