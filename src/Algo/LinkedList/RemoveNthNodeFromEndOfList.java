@@ -1,4 +1,4 @@
-package LinkedListPracties;
+package Algo.LinkedList;
 
 public class RemoveNthNodeFromEndOfList {
       public class ListNode {
