@@ -68,6 +68,23 @@ public class FirstUniqChar {
         return -1;
     }
 
+    //brute force optimization
+    public int firstUniqCharUsingBruteFrceOptimization(String s) {
+        boolean flag = false;
+        for(int i = 0;i<s.length(); i++){
+            for(int j = 0; j<s.length(); j++){
+                if(s.charAt(i) == s.charAt(j) && i!=j){
+                    flag = true;
+                    break;
+                }
+            }
+            if(flag == false){
+                return i;
+            }else flag = false;
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         String givenString = "bbaj";
         System.out.println(firstUniqCharUsingButeF(givenString));
