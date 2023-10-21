@@ -29,7 +29,7 @@ public class FizzBuzzProb {
 
     public static void main(String[] args) {
         int n = 16;
-        List<String> resultList = new ArrayList<>(n);
+        List<String> resultList;
         resultList = fizzBuzz(n);
         System.out.println(resultList);
     }
