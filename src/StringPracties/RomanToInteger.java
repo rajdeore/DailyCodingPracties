@@ -66,16 +66,29 @@ public class RomanToInteger {
         int result = 0, num = 0;
 
         for (int i = s.length() - 1; i >= 0; i--) {
-            num = switch (s.charAt(i)) {
-                case 'M' -> 1000;
-                case 'D' -> 500;
-                case 'C' -> 100;
-                case 'L' -> 50;
-                case 'X' -> 10;
-                case 'V' -> 5;
-                case 'I' -> 1;
-                default -> num;
-            };
+            switch (s.charAt(i)) {
+                case 'M':
+                    num = 1000;
+                    break;
+                case 'D':
+                    num = 500;
+                    break;
+                case 'C':
+                    num = 100;
+                    break;
+                case 'L':
+                    num = 50;
+                    break;
+                case 'X':
+                    num = 10;
+                    break;
+                case 'V':
+                    num = 5;
+                    break;
+                case 'I':
+                    num = 1;
+                    break;
+            }
             if (4 * num < result) result -= num;
             else result += num;
         }
