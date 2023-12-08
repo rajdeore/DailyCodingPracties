@@ -72,6 +72,7 @@ public class RemoveElement {
         System.out.println(removeElement(givenArray2, 2));
         System.out.println(removeElement(givenArray3, 4));
 
+
         System.out.println(removeElementWay2(givenArray, 3));
         System.out.println(removeElementWay2(givenArray1, 2));
         System.out.println(removeElementWay2(givenArray2, 2));
