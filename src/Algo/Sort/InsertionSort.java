@@ -31,4 +31,8 @@ public class InsertionSort {
         return arr;
 
     }
+
+    public static void main(String[] args) {
+
+    }
 }
