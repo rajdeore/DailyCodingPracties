@@ -16,7 +16,6 @@ public class MergeSortedArray88 {
     }
 
 
-
     //2-pointer from front. not working
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
@@ -58,25 +57,16 @@ public class MergeSortedArray88 {
 
 
     //2 pointer from back
-    public void merge2pointer(int[] nums1, int m, int[] nums2, int n){
-        int k = nums1.length-1;
+    public void merge2pointer(int[] nums1, int m, int[] nums2, int n) {
+        int pMerge = m + n - 1;
+        int p1 = m - 1;
+        int p2 = n - 1;
 
-        while(m>0 && n>0){
-            if(nums1[m-1] > nums2[n-1]){
-                nums1[k] = nums1[m-1];
-                m--;
-                k--;
-            }else {
-                nums1[k] = nums2[n-1];
-                n--;
-                k--;
-            }
-        }
-        if(n>=1){
-            while(n>=1){
-                nums1[k] = nums2[n-1];
-                n--;
-                k--;
+        while (p2 >= 0) {
+            if (p1 >= 0 && (nums1[p1] > nums2[p2])) {
+                nums1[pMerge--] = nums1[p1--];
+            } else {
+                nums1[pMerge--] = nums2[p2--];
             }
         }
     }
@@ -91,15 +81,20 @@ public class MergeSortedArray88 {
         n = 3;
 
         mergeSortedArray.merge2pointer(num1, m, num2, n);
+        for (int num : num1
+        ) {
+            System.out.print(num + ", ");
+        }
 
         //test case -2
-        int[] num3= {0};
+        int[] num3 = {0};
         m = 0;
-        int[] num4= {1};
+        int[] num4 = {1};
         n = 1;
         mergeSortedArray.merge2pointer(num3, m, num4, n);
 
-        for (int num : num1
+        System.out.println();
+        for (int num : num3
         ) {
             System.out.print(num + ", ");
         }
