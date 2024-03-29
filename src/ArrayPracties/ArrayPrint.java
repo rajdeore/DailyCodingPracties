@@ -9,4 +9,9 @@ public class ArrayPrint {
             }
         }
     }
+
+    public static void main(String[] args) {
+        int[] temp = {1, 2, 3, 4, 5};
+        arrayPrint(temp);
+    }
 }
