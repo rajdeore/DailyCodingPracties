@@ -21,7 +21,7 @@ public class ArrayPractiesMain {
         //_______________________________START of ArrayReverse______________________//
         // Array reverse using 2 pointer
 /*
-        ArrayReverse obj = new ArrayReverse();
+        ArrayReverse344 obj = new ArrayReverse344();
         tempArr = obj.arrayReverse(tempArr);
         printArray(tempArr);
  */

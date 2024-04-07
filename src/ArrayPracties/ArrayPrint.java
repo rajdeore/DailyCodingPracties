@@ -5,13 +5,8 @@ public class ArrayPrint {
             if(i != givenArrray.length-1){
                 System.out.print(givenArrray[i] + ", ");
             }else{
-                System.out.print(givenArrray[i]);
+                System.out.println(givenArrray[i]);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        int[] temp = {1, 2, 3, 4, 5};
-        arrayPrint(temp);
     }
 }
