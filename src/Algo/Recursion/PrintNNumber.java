@@ -19,6 +19,16 @@ public class PrintNNumber {
     public static void main(String[] args) {
 
         int i = 10;
-        printNumberUsingRecurssion(i);
+        //printNumberUsingRecurssion(i);
+
+        print5(5);
+    }
+
+    private static void print5(int i) {
+        if(i==0)return;
+        System.out.println(i);
+        i--;
+        print5(i);
+        System.out.println(i);
     }
 }

@@ -1,5 +1,7 @@
 package Algo.Searching;
 
+import java.util.Arrays;
+
 public class SearchingMain {
     public static void main(String[] args) {
 
@@ -9,16 +11,18 @@ public class SearchingMain {
 
 
         //________________START of BinarySearch____________________________//
-/*        BinarySearch binarysearch = new BinarySearch();
-        int low = 0;
-        int high = tempArr.length -1;
-        int matchFoundResult = binarysearch.binarySearch(ascArr, 4, low, high );
+
+        BinarySearch binarysearch = new BinarySearch();
+
+        // int matchFoundResult = binarysearch.binarySearch(ascArr, 4 );
+
+        int matchFoundResult = BinarySearch.binarySearchUsingIteration(ascArr, 4);
         if(matchFoundResult == -1){
             System.out.println("Number is not in array");
         }else{
             System.out.println("Number is present at : " + (matchFoundResult+1) );
         }
- */
+
         //________________END of BinarySearch____________________________//
 
 
@@ -36,5 +40,20 @@ public class SearchingMain {
 */
 
         //___________________END of LinearSearch____________________________//
+
+        //___________________START of SearchIn2DArray____________________________//
+ /*
+        int[][] given2D = {
+                {23, 4, 1},
+                {18, 12, 3, 9},
+                {78, 99, 34, 56},
+                {18, 12}
+        };
+
+        int[] result = SearchIn2DArray.searchIn2DArray(given2D, 34);
+
+        System.out.println(Arrays.toString(result));
+*/
+        //___________________END of SearchIn2DArray____________________________//
     }
 }
