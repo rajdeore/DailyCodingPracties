@@ -1,0 +1,26 @@
+
+
+Map<Integer,Integer>  result = new TreeMap<>(record, Comaprator.comparing((e1, e2) -> record.get(e1).comperTo(record.get(e2));
+
+
+
+list = employs --> salary
+
+req: double the salary
+
+
+employs.stream().map(emp -> emp.setSalary(emp.getSalary() * 2).colllect(Collectors.
+
+
+@FunctionalInteface
+Inteface SimpleIntrest{
+    double interset(int p,int r,int t);
+}
+
+
+
+class demo{
+    SimpleIntrest simple = (p, r, t) -> (p * r * t )/100;
+
+    sout(simple.intreset(10,8,2));
+}

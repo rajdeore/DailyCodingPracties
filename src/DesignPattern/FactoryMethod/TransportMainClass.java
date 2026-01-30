@@ -1,6 +1,6 @@
 package DesignPattern.FactoryMethod;
 
-public class Transport {
+public class TransportMainClass {
     public static void main(String[] args) {
         Vehicle v1 = VehicleFactory.getInstance("car");
         v1.start();

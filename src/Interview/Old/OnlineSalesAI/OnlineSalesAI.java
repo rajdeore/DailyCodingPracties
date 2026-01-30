@@ -1,4 +1,4 @@
-package Interview;
+package Interview.Old.OnlineSalesAI;
 
 public class OnlineSalesAI {
 

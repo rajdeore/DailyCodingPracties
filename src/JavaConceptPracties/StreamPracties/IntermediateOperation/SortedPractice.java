@@ -10,6 +10,10 @@ public class SortedPractice {
     public static void main(String[] args) {
         List<Integer> givenNumber = Arrays.asList(2, 1, 4, 7, 2, 5);
 
+        givenNumber.stream().sorted(Integer::compareTo).forEach(e -> System.out.print(e + ", "));
+
+        System.out.println();
+
         //Using Stream.sorted()
         Stream result = givenNumber.stream().sorted(new ReverseComparator());
         //System.out.println(result);

@@ -1,13 +1,11 @@
 package JavaConceptPracties.OOPS.Inheritance;
 
-import java.io.File;
-
-class Parent{
+class ParentDemo {
     public void m1(){
         System.out.println("Hi, i m in parent");
     }
 }
-class Child extends Parent{
+class Child extends ParentDemo {
     public void m2(){
         System.out.println("Hi, i m in Child");
     }
@@ -23,13 +21,13 @@ public class IsARelationDemo {
         Integer.getInteger();*/
 
         // creating obj of parent with parent refrence
-        Parent parent = new Parent();
-        parent.m1();
+        ParentDemo parentDemo = new ParentDemo();
+        parentDemo.m1();
 
 
         //creating obj of child with parent refreence
-        Parent parent1 = new Child();
-        parent1.m1();
+        ParentDemo parentDemo1 = new Child();
+        parentDemo1.m1();
         // parent1.m2();    ----> not possible
 
         //creating obj of parent with chile refrence

@@ -3,10 +3,13 @@ package JavaConceptPracties.StreamPracties.Problems;
 public class Person {
     private String name;
     private int age;
+    private long salary;
 
-    public Person(String name, int age) {
+    public Person(String name, int age, long salary) {
         this.name = name;
         this.age = age;
+        this.salary = salary;
+
     }
 
     public String getName() {
@@ -25,11 +28,20 @@ public class Person {
         this.age = age;
     }
 
+    public long getSalary() {
+        return salary;
+    }
+
+    public void setSalary(long salary) {
+        this.salary = salary;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
+                ", age=" + age +  '\'' +
+                ", salary=" + salary +
                 '}';
     }
 }

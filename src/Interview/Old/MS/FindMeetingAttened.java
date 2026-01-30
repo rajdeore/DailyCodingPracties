@@ -1,4 +1,4 @@
-package Interview.MS;
+package Interview.Old.MS;
 
 import java.util.Arrays;
 

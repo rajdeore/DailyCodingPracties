@@ -1,5 +1,7 @@
 package TreePractice;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -133,6 +135,34 @@ public class BinaryTree {
             return leftResult;
 
         return findNode(root.right, target);
+    }
+
+
+    public static boolean hasPathSum(Node root, int targetSum){
+
+        int sum = 0;
+        Queue<Node> visited  = new LinkedList<>();
+
+        boolean result = helper(root, targetSum, sum, visited);
+        return  result;
+
+    }
+
+    private static boolean helper(Node root, int targetSum, int sum, Queue<Node> visited) {
+        if(root.left == null && root.right == null && sum % targetSum == 0 ){
+            return  true;
+        }
+        if(root.left !=  null){
+            visited.add(root.left);
+        }
+        if(root.right != null){
+            visited.add(root.right);
+        }
+        if(!visited.isEmpty()) {
+            sum += root.data;
+            root = visited.remove();
+        }
+        return helper(root, targetSum, sum, visited);
     }
 
 

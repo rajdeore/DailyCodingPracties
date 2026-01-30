@@ -1,6 +1,7 @@
-package Interview.MS;
+package Interview.Old.MS;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Employee  {
     private String name;
@@ -43,20 +44,27 @@ public class Employee  {
         Employee e1 = new Employee("abc", "Female", 15000);
         Employee e2 = new Employee("def", "Male", 10000);
         Employee e3 = new Employee("bcd", "Male", 15000);
-        Employee e4 = new Employee("abc", "Male", 10000);
+        Employee e4 = new Employee("abc", "Female", 10000);
         listEmp.add(e1);
         listEmp.add(e2);
         listEmp.add(e3);
         listEmp.add(e4);
 
-        System.out.println(listEmp.toString());
+        //System.out.println(listEmp.toString());
 
-        Collections.sort(listEmp, new CustomComparator());
+        //Comparator using Comparator class
+        Comparator<Employee> sortBySalary = Comparator.comparingInt(Employee::getSalary).reversed().thenComparing(Employee::getName);
+
+        System.out.println(listEmp.stream().collect(Collectors.groupingBy(Employee::getGender)));
+
+        System.out.println(listEmp.toString());
+        Collections.sort(listEmp, sortBySalary);
+        System.out.println(listEmp.toString());
 
         System.out.println("After sorting");
         System.out.println(listEmp.toString());
 
-        listEmp.sort(Comparator.comparing(Employee::getName).thenComparing(Employee::getSalary).thenComparing(Employee::getGender));
+       // listEmp.sort(Comparator.comparing(Employee::getName).thenComparing(Employee::getSalary).thenComparing(Employee::getGender));
 
 
         //MyComparator for user define sorting

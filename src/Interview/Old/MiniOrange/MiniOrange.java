@@ -1,7 +1,7 @@
-package Interview;
+package Interview.Old.MiniOrange;
 
 
-import Interview.MS.Employee;
+import Interview.Old.MS.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
